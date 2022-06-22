@@ -1,0 +1,20 @@
+{
+  "name": "millennium-chat",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite serve",
+    "postbuild": "node ./genRes.js",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "node ./deploy.js"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "svelte": "^3.44.0",
+    "vite": "^2.9.9"
+  }
+}
